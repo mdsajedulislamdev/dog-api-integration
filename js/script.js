@@ -4,10 +4,9 @@ document.getElementById("click-btn").addEventListener("click", () => {
     .then((data) => ShowData(data));
 });
 
-const main = document.getElementById("main");
 const ShowData = (dogList) => {
+  const main = document.getElementById("main");
   const TenDogList = dogList.slice(0, 21);
-  console.log(TenDogList);
   for (const dog of TenDogList) {
     const div = document.createElement("div");
     div.classList = "col col-lg-4";
