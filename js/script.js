@@ -5,7 +5,6 @@ document.getElementById("click-btn").addEventListener("click", () => {
 });
 
 const ShowData = (dogList) => {
-  const main = document.getElementById("main");
   const TenDogList = dogList.slice(0, 21);
   for (const dog of TenDogList) {
     const div = document.createElement("div");
